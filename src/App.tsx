@@ -3,7 +3,7 @@ import './App.css'
 import kushImage from './assets/kush.png'
 import synclyImage from './assets/syncly.png'
 import mechroImage from './assets/mechro.png'
-import stoxieImage from './assets/stoxie.png'
+import cozycamImage from './assets/cozycam.png'
 import myStoryIcon from './assets/my story.svg'
 import strengthsIcon from './assets/strengths.svg'
 import interestsIcon from './assets/interests.svg'
@@ -15,7 +15,7 @@ function App() {
     e.preventDefault()
     const form = e.currentTarget
     const formData = new FormData(form)
-    
+
     fetch('https://formsubmit.co/ajax/kushagra.work11@gmail.com', {
       method: 'POST',
       headers: {
@@ -28,16 +28,16 @@ function App() {
         message: formData.get('message')
       })
     })
-    .then(() => {
-      setShowModal(true)
-      form.reset()
-      
-      setTimeout(() => {
-        setShowModal(false)
-        window.location.href = '/'
-      }, 5000)
-    })
-    .catch((error) => console.error('Error:', error))
+      .then(() => {
+        setShowModal(true)
+        form.reset()
+
+        setTimeout(() => {
+          setShowModal(false)
+          window.location.href = '/'
+        }, 5000)
+      })
+      .catch((error) => console.error('Error:', error))
   }
   return (
     <div className="app">
@@ -83,13 +83,13 @@ function App() {
             <div className="about-grid">
               <div className="about-card">
                 <div className="about-icon">
-                  <img src={myStoryIcon} alt="My Story" style={{width: '60px', height: '60px', filter: 'brightness(0) invert(1)'}} />
+                  <img src={myStoryIcon} alt="My Story" style={{ width: '60px', height: '60px', filter: 'brightness(0) invert(1)' }} />
                 </div>
                 <div className="about-card-content">
                   <h3 className="about-card-title">My Story</h3>
                   <p className="about-card-text">
-                    I’m a developer who loves crafting clean, thoughtful, and visually striking user interfaces. 
-                    I care deeply about the small details, how things move, how they feel, and how people experience them. 
+                    I’m a developer who loves crafting clean, thoughtful, and visually striking user interfaces.
+                    I care deeply about the small details, how things move, how they feel, and how people experience them.
                     For me, building is not just function; it’s design, emotion, and storytelling through UI.
                   </p>
                 </div>
@@ -97,13 +97,13 @@ function App() {
 
               <div className="about-card">
                 <div className="about-icon">
-                  <img src={strengthsIcon} alt="Strengths" style={{width: '60px', height: '60px', filter: 'brightness(0) invert(1)'}} />
+                  <img src={strengthsIcon} alt="Strengths" style={{ width: '60px', height: '60px', filter: 'brightness(0) invert(1)' }} />
                 </div>
                 <div className="about-card-content">
                   <h3 className="about-card-title">Strengths</h3>
                   <p className="about-card-text">
-                    I’m a developer who loves crafting clean, thoughtful, and visually striking user interfaces. 
-                    I care deeply about the small details, how things move, how they feel, and how people experience them. 
+                    I’m a developer who loves crafting clean, thoughtful, and visually striking user interfaces.
+                    I care deeply about the small details, how things move, how they feel, and how people experience them.
                     For me, building is not just function; it’s design, emotion, and storytelling through UI.
                   </p>
                 </div>
@@ -111,13 +111,13 @@ function App() {
 
               <div className="about-card">
                 <div className="about-icon">
-                  <img src={interestsIcon} alt="Interests" style={{width: '60px', height: '60px', filter: 'brightness(0) invert(1)'}} />
+                  <img src={interestsIcon} alt="Interests" style={{ width: '60px', height: '60px', filter: 'brightness(0) invert(1)' }} />
                 </div>
                 <div className="about-card-content">
                   <h3 className="about-card-title">Interests</h3>
                   <p className="about-card-text">
-                    When I’m not building things, you’ll find me playing basketball, training at the gym, reading to expand my perspective, 
-                    or picking up the guitar. I also enjoy photography and creating content, capturing moments, 
+                    When I’m not building things, you’ll find me playing basketball, training at the gym, reading to expand my perspective,
+                    or picking up the guitar. I also enjoy photography and creating content, capturing moments,
                     telling stories, and expressing ideas visually.
                   </p>
                 </div>
@@ -221,21 +221,21 @@ function App() {
                     <div className="window-dot close"></div>
                     <div className="window-dot minimize"></div>
                   </div>
-                  <div className="window-title">stoxie.html</div>
+                  <div className="window-title">cozycam.html</div>
                 </div>
                 <div className="project-preview">
-                  <img src={stoxieImage} alt="Stoxie" className="project-image" />
+                  <img src={cozycamImage} alt="CozyCam" className="project-image" />
                 </div>
                 <div className="project-info">
-                  <h3 className="project-name">Stoxie</h3>
+                  <h3 className="project-name">CozyCam</h3>
                   <p className="project-desc">
-                    A modern, minimalistic stock market dashboard built with Next.js and Tailwind CSS for tracking stocks and monitoring market trends.
+                    Instant Polaroid collage to share! Create fun photobooth-style memories directly in your browser without downloads.
                   </p>
-                  <button className="project-button" onClick={() => window.open('https://github.com/kush11-m/Stoxie', '_blank')}>View project</button>
+                  <button className="project-button" onClick={() => window.open('https://github.com/kush11-m/CozyCam', '_blank')}>View project</button>
                 </div>
               </div>
             </div>
-            
+
             <div className="projects-github">
               <button className="github-button" onClick={() => window.open('https://github.com/kush11-m', '_blank')}>
                 View More Projects on GitHub
@@ -249,7 +249,7 @@ function App() {
           <div className="contact-content">
             <h2 className="contact-title">Get In Touch</h2>
             <p className="contact-subtitle">Have a project in mind or just want to say hi? Drop me a message!</p>
-            
+
             <div className="contact-grid">
               <div className="contact-form-container">
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -257,27 +257,27 @@ function App() {
                     <label className="form-label">Name</label>
                     <input type="text" name="name" className="form-input" placeholder="Your name" required />
                   </div>
-                  
+
                   <div className="form-group">
                     <label className="form-label">Email</label>
                     <input type="email" name="email" className="form-input" placeholder="your@email.com" required />
                   </div>
-                  
+
                   <div className="form-group">
                     <label className="form-label">Message</label>
                     <textarea name="message" className="form-textarea" rows={6} placeholder="Tell me about your project..." required></textarea>
                   </div>
-                  
+
                   <button type="submit" className="form-button">Send Message</button>
                 </form>
               </div>
-              
+
               <div className="contact-info">
                 <div className="contact-card">
                   <div className="contact-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="6" y="10" width="28" height="20" rx="2"/>
-                      <path d="M6 12 L20 22 L34 12" strokeLinecap="round"/>
+                      <rect x="6" y="10" width="28" height="20" rx="2" />
+                      <path d="M6 12 L20 22 L34 12" strokeLinecap="round" />
                     </svg>
                   </div>
                   <div>
@@ -285,13 +285,13 @@ function App() {
                     <a href="mailto:kushagra.work11@gmail.com" className="contact-method-link">kushagra.work11@gmail.com</a>
                   </div>
                 </div>
-                
+
                 <div className="contact-card">
                   <div className="contact-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="10" y="10" width="20" height="20" rx="5"/>
-                      <circle cx="20" cy="20" r="5"/>
-                      <circle cx="26" cy="14" r="1" fill="currentColor"/>
+                      <rect x="10" y="10" width="20" height="20" rx="5" />
+                      <circle cx="20" cy="20" r="5" />
+                      <circle cx="26" cy="14" r="1" fill="currentColor" />
                     </svg>
                   </div>
                   <div>
@@ -299,12 +299,12 @@ function App() {
                     <a href="https://www.instagram.com/kushagrraa/" target="_blank" rel="noopener noreferrer" className="contact-method-link">@kushagrraa</a>
                   </div>
                 </div>
-                
+
                 <div className="contact-card">
                   <div className="contact-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="20" cy="20" r="14"/>
-                      <path d="M20 14 L20 26 M14 20 L26 20" strokeLinecap="round"/>
+                      <circle cx="20" cy="20" r="14" />
+                      <path d="M20 14 L20 26 M14 20 L26 20" strokeLinecap="round" />
                     </svg>
                   </div>
                   <div>
@@ -312,12 +312,12 @@ function App() {
                     <a href="https://github.com/kush11-m" target="_blank" rel="noopener noreferrer" className="contact-method-link">github.com/kush11-m</a>
                   </div>
                 </div>
-                
+
                 <div className="contact-card">
                   <div className="contact-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="8" y="12" width="24" height="16" rx="2"/>
-                      <path d="M8 16 L32 16" strokeLinecap="round"/>
+                      <rect x="8" y="12" width="24" height="16" rx="2" />
+                      <path d="M8 16 L32 16" strokeLinecap="round" />
                     </svg>
                   </div>
                   <div>
